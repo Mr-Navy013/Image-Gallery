@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <img src="image1.jpeg" onclick="openModal(this)">
+            <img src="image2.jpeg" onclick="openModal(this)">
+            <img src="image3.jpeg" onclick="openModal(this)">
+            <img src="image4.jpeg" onclick="openModal(this)">
+            <img src="image5.jpeg" onclick="openModal(this)">
+            <img src="image6.jpeg" onclick="openModal(this)">
+            <img src="image7.jpeg" onclick="openModal(this)">
+            <img src="image8.jpeg" onclick="openModal(this)">
+            <img src="image9.jpeg" onclick="openModal(this)">
+            <img src="image10.jpeg" onclick="openModal(this)">
+            <img src="image11.jpeg" onclick="openModal(this)">
+            <img src="image12.jpeg" onclick="openModal(this)">
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button> 
+        <img id="popup-img"> 
+        <div id="caption"></div> <!-- This is for image caption -->
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+     </div>
+    <script src="gallery.js"></script>
+</body>
+</html>
