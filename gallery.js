@@ -37,24 +37,25 @@ document.getElementById("popup").addEventListener("touchstart", function(e) {
      let endX = e.changedTouches[0].clientX;
      let diffX = startX - endX;
      if (diffX > 50) {
-       // swipe left → next image 
+       // swipe left -> next image 
        changeImage(1);
       
     } else if (diffX < -50) {
-       // swipe right → previous image
+       // swipe right -> previous image
         changeImage(-1);
        }
    });
   //  Key board response
   document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowRight") {
-    changeImage(1); // Right arrow → next image
+    changeImage(1); // Right arrow -> next image
   }
   if (e.key === "ArrowLeft") {
-    changeImage(-1); // Left arrow → previous image
+    changeImage(-1); // Left arrow -> previous image
   }
   if (e.key === "Escape") {
-    closeModal(); // Esc → close popup
+    closeModal(); // Esc -> close popup
   }
 });
+
 
