@@ -59,8 +59,8 @@ img:hover{
 }
 .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0.5rem;
+  right: 0.5rem;
   font-size: 40px;
   color: white;
   cursor: pointer;
